@@ -85,3 +85,38 @@ this_dict = {
 print(this_dict["brand"])
 print(type(this_dict))
 
+"""
+Sets are used to store multiple values in a single variable
+A set is a collection which is unordered so you cannot be sure in which order the items will appear.
+,unchangeable but you can remove items and add new items,and unindexed.
+"""
+
+this_set ={"Mango", "koko", "soso"}
+print(type(this_set))
+
+# you can add different data types
+set1 = {'abc', 34, True, 40, 'male'}
+print(set1)
+
+# pop() used to delete a random item
+this_set.pop()
+print(this_set)
+
+# add used to add an item
+this_set.add("shosh")
+print(this_set)
+
+# clear() empty the
+this_set.clear()
+print(this_set)
+
+"""
+Conclusion
+There are four collection data types in the Python programming language:
+
+- List is a collection which is ordered and changeable. Allows duplicate members.
+- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+- Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+- Dictionary is a collection which is ordered** and changeable. No duplicate members.
+"""
+
