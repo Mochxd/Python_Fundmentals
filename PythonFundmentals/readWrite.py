@@ -11,9 +11,9 @@
 
 # file.close()
 
-with open("test.txt","r") as file:
+with open("../test.txt", "r") as file:
     content = file.readlines()
     reversed(content)
-    with open("test.txt","w") as writer:
+    with open("../test.txt", "w") as writer:
         for line in reversed(content):
             writer.write(line)
