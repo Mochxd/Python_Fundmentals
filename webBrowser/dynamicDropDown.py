@@ -2,14 +2,14 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-def get_default_chrome_options():
-    options = webdriver.ChromeOptions()
-    options.add_argument("--no-sandbox")
-    options.add_argument("--start-maximized")
-    return options
-
-chrome_options = get_default_chrome_options()
-driver = webdriver.Chrome(options=chrome_options)
+# def get_default_chrome_options():
+#     options = webdriver.ChromeOptions()
+#     options.add_argument("--no-sandbox")
+#     options.add_argument("--start-maximized")
+#     return options
+#
+# chrome_options = get_default_chrome_options()
+driver = webdriver.Chrome()
 
 driver.get("https://rahulshettyacademy.com/dropdownsPractise/")
 dropDownField = (By.ID,"autosuggest")
